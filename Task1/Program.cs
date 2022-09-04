@@ -17,15 +17,9 @@ void Array2(int[] array)
         if(array[i] % 2 == 0)
             count++;  
     }
-    {
-            Console.Write("[");                           //
-            for(int i = 0; i < array.Length; i++)          //  Можем ли мы заменить эту часть на :
-            {                                              //  Console.WriteLine("[{0}]", string.Join(", ", array))
-                Console.Write(array[i] + ", ");            //  Пишет постоянно ошибку..
-            }                                              //
-            Console.Write(array[array.Length-1] + "]");    //
-    }       
-    Console.WriteLine($" массив из {array.Length} чисел, {count} из них чётные");
+    Console.WriteLine("[{0}]", string.Join(", ", array));
+    
+    Console.WriteLine($"Массив из {array.Length} чисел, {count} из них чётные");
 }
 
 
