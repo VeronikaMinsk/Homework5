@@ -18,12 +18,12 @@ void Array2(int[] array)
             count++;  
     }
     {
-            Console.Write("[ ");
+            Console.Write("[");
             for(int i = 0; i < array.Length; i++)
             {
-                Console.Write(array[i] + " ");
+                Console.Write(array[i] + ", ");
             }
-            Console.Write("]");   
+            Console.Write(array[array.Length-1] + "]");   
     }       
     Console.WriteLine($" массив из {array.Length} чисел, {count} из них чётные");
 }
