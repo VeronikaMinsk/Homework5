@@ -13,7 +13,7 @@ void Array2(double[] array)
     int size = array.Length;
     for(int i = 0; i < size; i++)
         {
-        array[i] = new Random().Next(1,100);
+            array[i] = new Random().Next(1,100);
         }
         Console.WriteLine($"Массив из {array.Length} чисел:");
         Console.WriteLine("[{0}]", string.Join(", ", array));
@@ -24,14 +24,15 @@ void Array2(double[] array)
     for(int i = 0; i < size; i++)
         {
             if(min > array[i]) 
-            min = array[i];
+                 min = array[i];
 
             else if(max < array[i]) 
-            max = array[i];
+                 max = array[i];
             
         }
         Console.WriteLine($"Минимальный элемент массива: {min}"); 
         Console.WriteLine($"Максимальный элемент массива: {max}"); 
+        
     double result = max - min;  
     Console.WriteLine($"Разница между между максимальным ({max}) и минимальным({min}) элементами: {result}");         
 }
